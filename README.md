@@ -1,1 +1,8 @@
-# PHP_FULLSTACK_S1_T2_N1_E1
+# PHP_FULLSTACK_S1_T2_N1
+**Descripció**: Entrega del sprint 1 tasca 2 nivell 1
+
+## Tecnologies  
+  - Frontend: html, php
+  
+## Instal·lació  
+  1. Clonar el repositori: git clone https://github.com/josemanuelriu-cmd/PHP_FULLSTACK_S1_T2_N1
