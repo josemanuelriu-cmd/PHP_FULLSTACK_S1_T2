@@ -14,6 +14,11 @@
 	} elseif (!$bolean2) {	
 		echo "Error, el valor 2 no és un número";
 	} else {
+		$resultat = Calcular($num1, $num2, $operacio);		
+		echo "El resultat es igual a $resultat";
+	}
+
+	function Calcular($num1, $num2, $operacio){
 		if ($operacio == '+' ) {
 			$resultat = $num1 + $num2;
 		} elseif ($operacio == '-') {
@@ -26,7 +31,7 @@
 			} else {
 				$resultat = "infinit";
 			}	
-		} 	
-		echo "El resultat es igual a $resultat";
+		} 
+		return $resultat;
 	}
 ?>
