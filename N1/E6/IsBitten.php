@@ -1,8 +1,9 @@
 <?php
 	
-	$boleanMossegat = IsBitten();
+	//$boleanMossegat = IsBitten();
 
-	if ($boleanMossegat) {
+	//if ($boleanMossegat) {
+	if (IsBitten()){
 		echo "<h1>Charlie em va mossegar el dit!</h1>";
 	} 
  	else {
@@ -10,8 +11,8 @@
 	}
 
 	function IsBitten(){
-		$value = rand(1, 100);
-		if ($value>=51) {
+		$value = rand(1, 2);
+		if ($value==1) {
 			return TRUE;
 		}
 		else {
