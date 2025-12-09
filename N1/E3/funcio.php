@@ -9,7 +9,7 @@
 		echo "El resultat es igual a $resultat";
 	}
 
-	function Calcular($num1, $num2, $operacio){
+	function Calcular($num1, $num2, $operacio):string{
 
 		switch ($operacio){
 			case '+': 
