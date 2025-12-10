@@ -48,14 +48,15 @@
 	}
 
 	function clasification($value){
+		$TextFix = "La classificacio és de ";
 		if ($value<4000) {
-			echo "La classificació és de 'Principiant'";
+			echo $TextFix . "'Principiant'";
 		}
 		elseif($value<8000){
-			echo "La classificació és de 'Intermedi'";
+			echo $TextFix . "'Intermedi'";
 		}
 		else{
-			echo "La classificació és de 'Professional'";
+			echo $TextFix . "'Professional'";
 		}
 	}
 

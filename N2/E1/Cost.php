@@ -1,5 +1,8 @@
 <?php
-	
+	define("PREUMINIM" , 10);
+	define("COSTMINUT" , 5);
+	define("TEMPSMINIM" , 3);
+
 	$time = $_POST["durada"];		
 	$boleanTime = is_numeric($time);	
 
@@ -7,18 +10,17 @@
 		echo "Error, ha d'introduir un valor numéric";
 	} 
  	else {
-		$preu = Durada($time);
-		
+		$preu = calcularPreuTrucada($time);		
 		echo "El preu de la trucada es de $preu centims";
 	}
 
-	function Durada($minutes){
-		if ($minutes <=3) {
-			$price = 10;			
+	function calcularPreuTrucada($minutes){
+		if ($minutes <=TEMPSMINIM) {
+			$price = PREUMINIM;
 		}
 		else {
-			$extra = $minutes-3;
-			$price = 10 + ($extra*5);
+			$extra = $minutes-TEMPSMINIM;
+			$price = PREUMINIM + ($extra*COSTMINUT);
 		}
 		return $price;
 	}

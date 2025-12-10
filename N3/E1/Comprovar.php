@@ -9,7 +9,7 @@
 		echo "Error, els valors han de ser números amb un valor entre 2 i 9999";
 	}	
  	else {
-		$FinalArray = SearchNumber($MyArray, $base, $number);		
+		$FinalArray = CribaEratostenes($MyArray, $base, $number);		
 		ShowArray($FinalArray, $base, $number);
 	}
 
@@ -23,7 +23,7 @@
 		}
 	}
 	
-	function SearchNumber($MyArray, $base, $number){
+	function CribaEratostenes($MyArray, $base, $number){
 		
 		$MyArray = array_fill(0, $number + 1, true);
 		
